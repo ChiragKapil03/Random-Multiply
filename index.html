@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(195, 227, 254);
+            height: 100vh;
+        }
+        .container{
+            height: 300px;
+            width: 500px;
+            padding: 20px;
+            background-color: azure;
+            border-radius: 30px;
+            box-shadow: 0px 0px 5px 3px gray;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        #answer{
+            height: 40px;
+            padding: 5px;
+            text-align: center;
+            font-size: large;
+            border-radius: 5px;
+        }
+        #button{
+            width: 150px;
+            height: 50px;
+            margin-inline: auto;
+            border-radius: 10px;
+        }
+        #button:hover{
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.722);
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Score : <span id="score">0</span></p>
+        <h1 id="question">What is *** multiply by *** ?</h1>
+        <input type="number" id="answer">
+        <button id="button">Submit</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
